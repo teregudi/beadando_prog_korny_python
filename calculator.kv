@@ -107,6 +107,7 @@
             Button:
                 text: "+/-"
                 font_size: 32
+                on_press: root.pos_or_neg()
             Button:
                 text: "0"
                 font_size: 32
@@ -114,7 +115,9 @@
             Button:
                 text: "."
                 font_size: 32
+                on_press: root.decimal_point()
             Button:
                 text: "="
                 font_size: 32
                 background_color: (15/255, 75/255, 175/255, 1)
+                on_press: root.result()
